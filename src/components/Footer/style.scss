@@ -1,0 +1,42 @@
+.footer {
+  background-color: #000;
+  border-top: 3px solid #ff9155;
+  &__wrap {
+    padding: 1rem;
+  }
+  &__term-line {
+    font-size: 0.875rem;
+    cursor: pointer;
+    line-height: 2;
+    &--term::after,
+    &--policy::after {
+      content: "|";
+      padding-left: 0.5rem;
+    }
+
+    & > div {
+      padding-right: 0.5rem;
+    }
+  }
+  &__copyright {
+    color: #8a8e8f;
+  }
+  &__note {
+    font-size: 0.8125rem;
+    color: #626869;
+    line-height: 1.8;
+  }
+  &__sitemap {
+    color: #8a8e8f;
+    cursor: pointer;
+    span {
+      margin-right: 2rem;
+    }
+    & >:hover{
+        color: #f9f9f9;
+    }
+  }
+  hr {
+    border-color: #f8f9fa29;
+  }
+}

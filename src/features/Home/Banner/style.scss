@@ -1,0 +1,64 @@
+@import "assets/styles/custom-btn.scss";
+$banner-height: 80vh;
+.banner {
+  &__wrap{
+    min-height: $banner-height;
+    backdrop-filter: brightness(90%);
+  }
+
+  &__img {
+    height: $banner-height;
+  }
+  &__content {
+    margin-top: calc(0.3 * #{$banner-height});
+    padding-right: 1rem;
+
+    h1 {
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      line-height: 1.8;
+      text-transform: uppercase;
+    }
+
+    .banner__groupBtn {
+      button {
+        @extend %btn--border__gradient;
+        outline: none;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &--listgame {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+          ),
+          linear-gradient(90deg, #ff9155 0, #d54e4e);
+        &:hover {
+          transition: all 0.2s ease-in-out 0.2s;
+          box-shadow: none;
+          color: white;
+        }
+      }
+      &--lol {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+          ),
+          linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 123, 255, 1) 0%,
+            rgba(24, 126, 236, 1) 100%
+          );
+        &:hover {
+          transition: all 0.2s ease-in-out 0.2s;
+          box-shadow: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

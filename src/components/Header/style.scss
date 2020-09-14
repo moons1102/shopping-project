@@ -1,0 +1,90 @@
+@import "assets/styles/custom-btn.scss";
+//
+.animate {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+//Custom bootstrap 
+.dropdown-menu{
+  background-color: #fff;
+  
+}
+.dropdown-item:hover{
+background-color: #ff9155 ;
+}
+
+
+// 
+#HEADER {
+  a {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+  li:hover a {
+    transform: translateY(-2px);
+  }
+  .login {
+    button {
+      @extend %btn--border__gradient;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(90deg, #ff9155 0, #d54e4e);
+      &:hover {
+        transition: all 0.25s ease-in-out 0.3s;
+        box-shadow: none;
+        color: white;
+      }
+    }
+  }
+
+  .register {
+    button {
+      @extend %btn--border__gradient;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 123, 255, 1) 0%,
+          rgba(24, 126, 236, 1) 100%
+        );
+      &:hover {
+        transition: all 0.25s ease-in-out 0.3s;
+        box-shadow: none;
+        color: white;
+      }
+    }
+  }
+  .nav-wrap {
+    background-color: #000;
+  }
+}

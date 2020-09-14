@@ -1,0 +1,41 @@
+.gamelisticon {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover &__wrap {
+    animation: increaseBright 2s infinite;
+    border: 2px solid #ff9155;
+    border-radius: 8px;
+  }
+
+  img {
+    padding: 0.5rem 1rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+@keyframes increaseBright {
+  0% {
+    backdrop-filter: brightness(1);
+  }
+  25% {
+    backdrop-filter: brightness(1.1);
+  }
+  50% {
+    backdrop-filter: brightness(1.2);
+  }
+  75% {
+    backdrop-filter: brightness(1.3);
+  }
+  100% {
+    backdrop-filter: brightness(1.5);
+  }
+}

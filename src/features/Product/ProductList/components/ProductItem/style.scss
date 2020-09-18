@@ -1,0 +1,109 @@
+@import "assets/styles/custom-btn.scss";
+
+.item-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+@mixin item-btn($top, $right, $bottom, $left) {
+  position: absolute;
+  width: 4.5rem;
+  left: $left;
+  top: -$top;
+  bottom: $bottom;
+  right: $right;
+  z-index: 1000;
+
+  border: 1px solid transparent;
+  border-radius: 15px;
+
+  text-align: center;
+  user-select: none;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  padding: 2px 0;
+}
+.product-item {
+  user-select: none;
+  transition: transform 0.25s ease-in-out 0.25s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+  &__wrap {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #202224;
+    padding: 2rem 1rem;
+  }
+  &__rank {
+    img {
+      max-height: 100px;
+    }
+    span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+      margin-top: 1.2rem;
+    }
+  }
+  &__main {
+    .season {
+      &__key {
+        color: #737577;
+        text-transform: capitalize;
+      }
+      &__value {
+        font-weight: 700;
+      }
+    }
+  }
+  &__bg {
+    padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0.03;
+  }
+  &__bottom {
+    span {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #f18c55;
+    }
+  }
+  &__view-detail {
+    button {
+      @extend %btn--border__gradient;
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(90deg, #ff9155 0, #d54e4e);
+      &:hover {
+        transition: all 0.25s ease-in-out 0.3s;
+        box-shadow: none;
+        color: white;
+      }
+    }
+  }
+  &__status {
+    @include item-btn(--10px, unset, unset, 15px);
+    background-image: linear-gradient(90deg, #d54e4e 0, #ff9155);
+  }
+
+  &__promo {
+    @include item-btn(--10px, 15px, unset, unset);
+    background: rgb(93, 97, 197);
+    background: linear-gradient(
+      90deg,
+      rgba(93, 97, 197, 1) 0%,
+      rgba(83, 130, 202, 1) 35%,
+      rgba(68, 179, 208, 1) 100%
+    );
+  }
+}

@@ -1,0 +1,45 @@
+@import "assets/styles/constants.scss";
+.rank-filter {
+  &__title {
+    @include item-flex;
+  }
+  &__clear-filter {
+    font-size: 0.9375rem;
+    color: #ff9155;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__item {
+    @include item-flex;
+    padding: 0.8375rem 1rem;
+
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    background-color: #ffffff1a;
+    cursor: pointer;
+
+    &:hover{
+        border: 2px solid #ff9155;
+        background-color: #69473494;
+    }
+    img {
+      height: 45px;
+    }
+    span{
+        font-weight: 700;
+    }
+    &:nth-child(odd) {
+      margin-right: 0.5rem;
+    }
+    &:nth-child(even) {
+        margin-left: 0.5rem;
+      }
+  }
+}

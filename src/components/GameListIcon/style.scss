@@ -1,3 +1,8 @@
+.active-icon{
+ backdrop-filter: blur(10px);
+}
+
+
 .gamelisticon {
   background-color: hsla(0, 0%, 100%, 0.1);
   border-radius: 8px;
@@ -5,7 +10,7 @@
     cursor: pointer;
   }
   &:hover &__wrap {
-    animation: increaseBright 2s infinite;
+    animation: increaseBright 0.1s forwards;
     border: 2px solid #ff9155;
     border-radius: 8px;
   }

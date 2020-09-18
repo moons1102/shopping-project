@@ -17,7 +17,7 @@ import "./style.scss";
 
 export const Header = (props) => {
   return (
-    <header id="HEADER">
+    <header id="header">
       <Navbar expand="md" className="fixed-top nav-wrap">
         <Container>
           <NavbarBrand>
@@ -34,7 +34,7 @@ export const Header = (props) => {
                   <DropdownToggle nav caret>
                     DANH SÁCH GAME
                   </DropdownToggle>
-                  <DropdownMenu left className="animate slideIn">
+                  <DropdownMenu className="animate slideIn">
                     <DropdownItem>Liên Minh huyền thoại</DropdownItem>
                     <DropdownItem>Liên quân</DropdownItem>
                     <DropdownItem>FreeFire</DropdownItem>

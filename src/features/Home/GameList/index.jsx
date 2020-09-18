@@ -48,21 +48,6 @@ const GameList = () => {
                 <Col className="gamelist__content--item">
                   <GameListIcon imgSrc={PubgIcon} />
                 </Col>
-                <Col className="gamelist__content--item">
-                  <GameListIcon imgSrc={PubgIcon} />
-                </Col>
-                <Col className="gamelist__content--item">
-                  <GameListIcon imgSrc={PubgIcon} />
-                </Col>
-                <Col className="gamelist__content--item">
-                  <GameListIcon imgSrc={PubgIcon} />
-                </Col>
-                <Col className="gamelist__content--item">
-                  <GameListIcon imgSrc={PubgIcon} />
-                </Col>
-                <Col className="gamelist__content--item">
-                  <GameListIcon imgSrc={PubgIcon} />
-                </Col>
               </Row>
               <div className="gamelist__subtitle">
                 <h3>Trò chơi may mắn</h3>

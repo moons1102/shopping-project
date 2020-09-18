@@ -1,0 +1,48 @@
+// custom boostrap
+
+.product-list {
+  background-color: #141618;
+
+  .filter {
+    flex: 0 0 22%;
+    &__wrap {
+      padding: 0 15px;
+      background-color: #212427;
+    }
+  }
+  &__content {
+    flex: 0 0 78%;
+  }
+  &__wrap {
+    padding: 2rem 0;
+  }
+  &__sort {
+    cursor: pointer;
+    position: relative;
+    z-index: 99999;
+    user-select: none;
+
+    &:hover &--title {
+      opacity: 0.8;
+    }
+    .dropdown-menu {
+      left: -100px;
+      min-width: 13rem;
+      
+      button {
+        white-space: unset;
+        font-size: 0.9rem;
+
+        padding: unset;
+        padding-bottom: 0.5rem;
+
+        &:hover {
+          background-color: #ececec;
+        }
+      }
+    }
+  }
+  &__dropdown {
+    font-size: 0.8135rem;
+  }
+}

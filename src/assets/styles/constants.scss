@@ -1,0 +1,15 @@
+@mixin item-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+@mixin clear-filter {
+    font-size: 0.9375rem;
+    color: #ff9155;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+}

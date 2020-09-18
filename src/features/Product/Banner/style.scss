@@ -1,0 +1,11 @@
+.product-banner{
+    &__img{
+        min-height: 70vh;
+    }
+    &__wrap{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
